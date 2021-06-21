@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_list_messages"
+    android:gravity="center"
+    android:paddingVertical="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/friend_profile_pic" />
+
+
+
+    <TextView
+        android:id="@+id/disp_msg_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/friend_profile_pic"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:text="Message"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FFF"
+        android:textSize="17sp"
+        android:background="@drawable/chat_bubble_green"/>
+
+    <TextView
+        android:id="@+id/disp_msg_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:text="Message"
+        android:textColor="#FFF"
+        android:textSize="17sp"
+        android:background="@drawable/chat_bubble_blue"
+        android:maxEms="15" />
+
+    <TextView
+        android:id="@+id/check_read"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignEnd="@id/disp_msg_you"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/ic_doubletick_24dp"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/typing_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/friend_profile_pic"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:text="Typing..."
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FFF"
+        android:textSize="17sp"
+        android:background="@drawable/chat_bubble_green"
+        android:visibility="invisible"
+        android:maxEms="15"/>
+
+</RelativeLayout>
